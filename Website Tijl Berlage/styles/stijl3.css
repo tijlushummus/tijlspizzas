@@ -1,0 +1,47 @@
+/* Algemene stijlen */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F2E6D7;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #B79F7B;
+    padding: 20px;
+}
+
+h1 {
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #B79F7B;
+}
+
+footer {
+    background-color: #B79F7B;
+    padding: 10px;
+    color: white;
+}

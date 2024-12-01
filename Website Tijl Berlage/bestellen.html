@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bestellen - Tijl's Pizza's</title>
+    <link rel="stylesheet" href="styles/stijl2.css">
+    <script src="scripts/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Tijl's Pizza's</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="bestellen.html">Bestellen</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="over.html">Over Tijl</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Bestel jouw favoriete pizza's!</h2>
+            <form id="bestelForm" action="https://formspree.io/f/mwpkwvrg" method="POST">
+                <label for="pizza">Kies je pizza:</label>
+                <select id="pizza" name="pizza" required>
+                    <option value="" disabled selected>Selecteer een pizza</option>
+                    <option value="Margherita">Margherita (€9,50)</option>
+                    <option value="Pepperoni">Pepperoni (€10,-)</option>
+                    <option value="Hawaii">Hawaii (€10,-)</option>
+                    <option value="Vegetariana">Vegetariana (€10,50)</option>
+                    <option value="Quattro Stagioni">Quattro Stagioni (€11,-)</option>
+                </select>
+
+                <label for="aantal">Aantal:</label>
+                <input type="number" id="aantal" name="aantal" min="1" required>
+
+                <button type="button" id="voegToe">Voeg toe</button>
+                <ul id="bestellingLijst"></ul>
+
+                <p id="totaalPrijs">Totale prijs: €0,00</p>
+
+                <label for="naam">Naam:</label>
+                <input type="text" id="naam" name="naam" required>
+
+                <label for="adres">Adres:</label>
+                <input type="text" id="adres" name="adres" required>
+
+                <label for="telefoon">Telefoonnummer:</label>
+                <input type="tel" id="telefoon" name="telefoon" required>
+
+                <button type="submit">Plaats bestelling</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tijl's Pizza's</p>
+    </footer>
+</body>
+</html>
